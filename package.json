@@ -6,8 +6,8 @@
   "author": "Liam Hockley",
   "license": "MIT",
   "repository": {
-      "type": "git",
-      "url": "https://github.com/xdega/liamhockley.git"
+    "type": "git",
+    "url": "https://github.com/xdega/liamhockley.git"
   },
   "dependencies": {
     "express": "^4.16.4"
