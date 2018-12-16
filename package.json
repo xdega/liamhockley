@@ -5,6 +5,15 @@
   "main": "app.js",
   "author": "Liam Hockley",
   "license": "MIT",
+  "scripts": {
+    "fix:other": "yarn prettier --write",
+    "fix:js": "yarn test:js --fix",
+    "fix": "yarn fix:js && yarn fix:other",
+    "prettier": "prettier \"**/*.{json,md,scss,yaml,yml}\"",
+    "test:other": "yarn prettier --list-different",
+    "test:js": "eslint --ignore-path .gitignore --ignore-path .prettierignore \"**/*.{js,jsx}\"",
+    "test": "yarn test:other && yarn test:js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/xdega/liamhockley.git"
