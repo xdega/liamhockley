@@ -5,11 +5,22 @@
   "main": "app.js",
   "author": "Liam Hockley",
   "license": "MIT",
+  "scripts": {
+    "format": "prettier --write \"**/*.{json,md,scss,yaml,yml}\"",
+    "lint": "eslint --ignore-path .gitignore \"**/*.js\";exit 0",
+    "fix": "eslint --fix --ignore-path .gitignore \"**/*.js\";exit 0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/xdega/liamhockley.git"
   },
   "dependencies": {
     "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "eslint": "5.10.0",
+    "eslint-config-prettier": "3.3.0",
+    "eslint-plugin-prettier": "3.0.0",
+    "prettier": "1.15.3"
   }
 }

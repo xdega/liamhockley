@@ -1,14 +1,13 @@
-var express = require('express');
-var app = express();
+const express = require("express");
+const app = express();
+const port = 8080;
 
 // Routes
-app.get('/', function (req, res) {
-  res.send('Welcome to liamhockley.me');
+app.get("/", (req, res) => {
+  res.send("Welcome to liamhockley.me");
 });
 
 // Server
-app.listen(8080, function () {
-  console.log('Server Started...');
+app.listen(port, () => {
+  console.log("Server Started...");
 });
-
-
