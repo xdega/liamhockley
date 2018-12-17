@@ -3,8 +3,8 @@ const app = express();
 const port = 8080;
 
 // Routes
-app.get("/", (req, res) => {
-  res.send("Welcome to liamhockley.me");
+app.get("/", function (req, res) {
+  res.render("index", { title: "liamhockley.me", message: "Welcome to my personal website" });
 });
 
 // Server
