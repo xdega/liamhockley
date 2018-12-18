@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 8080;
+const config = require("config");
 
 // Routes
 app.set("view engine", "pug");
@@ -12,6 +12,6 @@ app.get("/", (req, res) => {
 });
 
 // Server
-app.listen(port, () => {
-  console.log("Server Started...");
+app.listen(config.get("port"), () => {
+  console.log("Listening on port " + config.get("port"));
 });
