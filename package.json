@@ -8,7 +8,9 @@
   "scripts": {
     "format": "prettier --write \"**/*.{json,md,scss,yaml,yml}\"",
     "lint": "eslint --ignore-path .gitignore \"**/*.js\";exit 0",
-    "fix": "eslint --fix --ignore-path .gitignore \"**/*.js\";exit 0"
+    "fix": "eslint --fix --ignore-path .gitignore \"**/*.js\";exit 0",
+    "build": "webpack",
+    "watch": "npm run build -- --watch"
   },
   "repository": {
     "type": "git",
