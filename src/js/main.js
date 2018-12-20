@@ -1,1 +1,1 @@
-console.log('Javascript Assets Loaded!');
+console.log("Javascript Assets Loaded!");
