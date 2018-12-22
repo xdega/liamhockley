@@ -1,2 +1,2 @@
-import "./sass/main.scss";
+import "./sass/main.sass";
 import "./js/main.js";
