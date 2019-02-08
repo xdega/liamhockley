@@ -9,7 +9,9 @@ app.set("views", path.join(__dirname, "views"));
 
 // Routes
 app.get("/", (req, res) => {
-  res.render("index", {});
+  res.render("index", {
+    active: "home"
+  });
 });
 
 app.listen(config.get("port"), () => {
