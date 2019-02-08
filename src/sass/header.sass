@@ -1,0 +1,26 @@
+header, nav
+    text-align: center
+    text-transform: uppercase
+header
+    h1
+        margin-bottom: 5px
+        color: $color-primary
+        font-family: $font-stack-heading
+        font-weight: 800
+nav
+    .active
+        border-bottom: 3px solid //todo: active mixin?
+    ul
+        margin: 0
+        padding: 0
+        list-style: none
+        li
+            display: inline
+            &:not(:last-child)
+                margin-right: 30px
+            &:hover
+                border-bottom: 3px solid //todo: active mixin?
+            a
+                text-decoration: none
+                font-size: 1.1rem
+                color: $color-primary

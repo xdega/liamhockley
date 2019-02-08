@@ -10,7 +10,7 @@ app.set("views", path.join(__dirname, "views"));
 // Routes
 app.get("/", (req, res) => {
   res.render("index", {
-    active: "homee"
+    active: "home"
   });
 });
 
